@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background: url("images/pattern-background-mobile.svg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > div {
+    width: 350px;
+    padding: 0 35px 35px 35px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+body > img:first-child {
+    width: 350px;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin: 25px 0;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+body > div > div:first-of-type {
+   display: flex;
+   justify-content: space-between;
+   background-color: hsl(220, 25%, 95%); 
+   border-radius: 15px;
+   margin: 25px 0;
+   padding: 15px;
+}
+
+body > div > div > div {
+    line-height: 25px;
+}
+
+body > div > div > div > div:first-child {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+body > div > div > div > div:last-child {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+body > div > div button:first-of-type {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    border: none;
+    text-decoration: underline;
+}
+
+body > div > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > div > div:last-of-type > button:first-of-type {
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: 900;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+body > div > div:last-child button:last-child {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    width: 100%;
+    border: none;
+}
