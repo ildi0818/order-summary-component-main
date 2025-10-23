@@ -21,14 +21,14 @@ body {
 }
 
 body > div {
-    width: 350px;
-    padding: 0 35px 35px 35px;
+    width: 340px;
+    padding: 0 30px 20px 30px;
     border-radius: 0 0 15px 15px;
     background-color: hsl(225, 100%, 98%);
 }
 
 body > img:first-child {
-    width: 350px;
+    width: 340px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -49,7 +49,7 @@ p {
 
 body > div > div:first-of-type {
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    background-color: hsl(220, 25%, 95%); 
    border-radius: 15px;
    margin: 25px 0;
@@ -58,6 +58,7 @@ body > div > div:first-of-type {
 
 body > div > div > div {
     line-height: 25px;
+    margin: 0 55px 0 15px;
 }
 
 body > div > div > div > div:first-child {
@@ -72,9 +73,17 @@ body > div > div > div > div:last-child {
 
 body > div > div button:first-of-type {
     color: hsl(245, 75%, 52%);
+    font-size: 0.9rem;
     font-weight: 900;
+    background-color: transparent;
     border: none;
     text-decoration: underline;
+}
+
+body > div > div button:first-of-type:hover {
+    cursor: pointer;
+    color: rgb(133, 83, 224);
+    text-decoration: none;
 }
 
 body > div > div:last-child {
@@ -84,19 +93,42 @@ body > div > div:last-child {
 
 body > div > div:last-of-type > button:first-of-type {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-weight: 900;
     background-color: hsl(245, 75%, 52%);
     color: white;
+    box-shadow: 5px 25px 35px rgb(148, 161, 163);
     text-decoration: none;
     padding: 15px;
     border: none;
     border-radius: 15px;
 }
 
+body > div > div:last-of-type > button:first-of-type:hover {
+    background-color: rgb(133, 83, 224); 
+}
+
 body > div > div:last-child button:last-child {
     color: hsl(224, 23%, 55%);
+    background-color: transparent;
+    font-size: 0.9rem;
     font-weight: 900;
     width: 100%;
+    padding: 15px;
     border: none;
+}
+
+body > div > div:last-child button:last-child:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 376px) {
+    body > div {
+        width: 360px;
+    }
+
+    body > img:first-child {
+        width: 360px;
+    }
 }
