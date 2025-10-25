@@ -129,9 +129,9 @@ body > div > div:last-child button:last-child:hover {
 @media screen and (min-width: 376px) {
     body {
         background-image: url("images/pattern-background-desktop.svg");
-        background-position: center -28%;
+        background-position: center -30%;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: auto;
         background-attachment: fixed;
         min-height: 100vh;
     }
