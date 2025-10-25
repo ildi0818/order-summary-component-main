@@ -9,10 +9,10 @@
 
 body {
     background: url("images/pattern-background-mobile.svg");
-    background-position: center;
-    background-attachment: fixed;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,16 +20,16 @@ body {
     align-items: center;
 }
 
-body > div {
-    width: 340px;
-    padding: 0 30px 20px 30px;
-    border-radius: 0 0 15px 15px;
-    background-color: hsl(225, 100%, 98%);
+body > img:first-child {
+    width: 84%;
+    border-radius: 15px 15px 0 0;
 }
 
-body > img:first-child {
-    width: 340px;
-    border-radius: 15px 15px 0 0;
+body > div {
+    width: 84%;
+    padding: 0 25px 20px 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(225, 100%, 98%);
 }
 
 h1 {
@@ -42,6 +42,7 @@ h1 {
 
 p {
     color: hsl(224, 23%, 55%);
+    font-size: 16px;
     text-align: center;
     line-height: 25px;
     font-weight: 700;
@@ -49,7 +50,6 @@ p {
 
 body > div > div:first-of-type {
    display: flex;
-   /* justify-content: space-between; */
    background-color: hsl(220, 25%, 95%); 
    border-radius: 15px;
    margin: 25px 0;
@@ -58,22 +58,24 @@ body > div > div:first-of-type {
 
 body > div > div > div {
     line-height: 25px;
-    margin: 0 55px 0 15px;
+    margin: 0 14% 0 4%;
 }
 
 body > div > div > div > div:first-child {
+    font-size: 0.8rem;
     color: hsl(223, 47%, 23%);
     font-weight: 900;
 }
 
 body > div > div > div > div:last-child {
+    font-size: 0.8rem;
     color: hsl(224, 23%, 55%);
     font-weight: 700;
 }
 
-body > div > div button:first-of-type {
+body > div > div:first-of-type button:first-of-type {
     color: hsl(245, 75%, 52%);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 900;
     background-color: transparent;
     border: none;
@@ -94,6 +96,7 @@ body > div > div:last-child {
 body > div > div:last-of-type > button:first-of-type {
     width: 100%;
     margin-bottom: 15px;
+    font-size: 0.8rem;
     font-weight: 900;
     background-color: hsl(245, 75%, 52%);
     color: white;
@@ -111,7 +114,7 @@ body > div > div:last-of-type > button:first-of-type:hover {
 body > div > div:last-child button:last-child {
     color: hsl(224, 23%, 55%);
     background-color: transparent;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 900;
     width: 100%;
     padding: 15px;
@@ -124,11 +127,36 @@ body > div > div:last-child button:last-child:hover {
 }
 
 @media screen and (min-width: 376px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-position: center -28%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+    
+    body > img:first-child {
+        width: 360px;
+    }
+
     body > div {
         width: 360px;
     }
 
-    body > img:first-child {
-        width: 360px;
+    body > div > div > div > div:first-child {
+        font-size: 0.9rem;
+    }
+
+    body > div > div > div > div:last-child {
+        font-size: 0.9rem;
+    }
+
+    body > div > div:first-of-type button:first-of-type {
+        font-size: 0.9rem;
+    }
+
+    body > div > div > div {
+        margin: 0 20% 0 8%;
     }
 }
