@@ -131,7 +131,7 @@ body > div > div:last-child button:last-child:hover {
         background-image: url("images/pattern-background-desktop.svg");
         /* background-position: center -30%; */
         background-position: top center;
-        background-size: auto;
+        background-size: 100% 310px;
         background-repeat: no-repeat;
         background-attachment: fixed;
         min-height: 100vh;
