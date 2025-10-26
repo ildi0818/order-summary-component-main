@@ -11,7 +11,7 @@ body {
     background: url("images/pattern-background-mobile.svg");
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top center;
     background-attachment: fixed;
     height: 100vh;
     display: flex;
@@ -129,9 +129,10 @@ body > div > div:last-child button:last-child:hover {
 @media screen and (min-width: 376px) {
     body {
         background-image: url("images/pattern-background-desktop.svg");
-        background-position: center -30%;
-        background-repeat: no-repeat;
+        /* background-position: center -30%; */
+        background-position: top center;
         background-size: auto;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         min-height: 100vh;
     }
