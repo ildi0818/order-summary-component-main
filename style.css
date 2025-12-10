@@ -50,6 +50,7 @@ p {
 
 body > div > div:first-of-type {
    display: flex;
+   flex-direction: column;
    background-color: hsl(220, 25%, 95%); 
    border-radius: 15px;
    margin: 25px 0;
@@ -145,6 +146,11 @@ body > div > div:last-child button:last-child:hover {
     body > div {
         width: 360px;
         /* min-width: 250px; */
+    }
+
+    body > div > div:first-of-type {
+        display: flex;
+        flex-direction: row;
     }
 
     /* body > div > div > div > div:first-child {
