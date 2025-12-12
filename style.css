@@ -50,7 +50,7 @@ p {
 
 body > div > div:first-of-type {
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
    background-color: hsl(220, 25%, 95%); 
    border-radius: 15px;
    margin: 25px 0;
